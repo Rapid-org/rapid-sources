@@ -1,6 +1,35 @@
 # Rapid
 An online app to build extensions on the cloud using blocks!
+## Cloning
+To get started with Rapid sources. You need to fork & clone the sources locally.
+```bash
+git clone https://github.com/USERNAME/rapid-sources
+cd rapid-sources
+git remote add upstream https://github.com/Rapid1/rapid-sources
+git submodule update --init
+```
+## Preparing
+You need to prepare some softwares and tools first for Rapid to work properly
+### 1- MongoDB
+You must install MongoDB on your device. Then, make sure it's running using:
+```bash
+mongod --dbpath SOME_PATH
+```
+### 2- Firebase
+Please create a firebase project for your rapid fork. And download the google service account private key as explained here:
+https://firebase.google.com/docs/admin/setup#initialize-sdk
+And move it to the api directory.
+### 3- SMTP
+To receive emails, you must have an SMTP server. Then modify the configuration for the nodemailer (https://github.com/Rapid-org/rapid-sources/blob/ce9328a7d246cbe386540a36dce7f7a61613ee71/api/controllers/mailControllers.js#L186)[here]
+Additionaly, you have to create a credentials.json file in the api directory with the following structure:
+```json
+{
+  "email": "SMTP_EMAIL",
+  "password": "SMTP_PASSWORD"
+}
 
+```
+Note: for testing purposes, you could use email providers as SMTP. ex.: GMail.
 ## Building
 Rapid are built on multiple parts, the `client`, `buildserver` and `api`.
 ### Building the Client Module
