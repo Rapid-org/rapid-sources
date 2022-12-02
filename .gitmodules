@@ -1,0 +1,3 @@
+[submodule "client/src/blockly"]
+	path = client/src/blockly
+	url = git@github.com:Rapid-org/blockly.git

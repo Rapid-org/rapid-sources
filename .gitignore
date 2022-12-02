@@ -1,0 +1,5 @@
+node_modules/
+buildserver/.idea/
+client/.firebase/
+client/build/
+.idea/

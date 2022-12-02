@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url(./fonts/Poppins-Regular.ttf) format('opentype');
+}
+
+* {
+    font-family: Poppins, sans-serif
+}
+
+.centered-not-found {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+}

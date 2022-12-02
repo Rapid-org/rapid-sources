@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(./fonts/Poppins-Regular.ttf) format('opentype');
+}
+
+body {
+  font-family: Poppins, serif !important;
+}
+
+#main {
+  background-image: url(./images/loginBackground.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  z-index: auto !important;
+}
+
+
+.mdc-text-field {
+  /*
+    webkit-autofill will not fill the entire field because of padding on the parent label element.
+    For now; we remove padding on the parent and add it to the input field (and add margin to pre- and suffixes)
+  */
+  padding: 0;
+
+  &__input {
+    padding: 0 16px;
+  }
+
+  &__affix {
+    &--prefix {
+      margin-left: 16px;
+    }
+
+    &--suffix {
+      margin-right: 16px;
+    }
+  }
+}
+
+.signup-form {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  right: 0;
+  margin: auto;
+  width: 400px;
+  height: 68vh;
+  margin-top: 100px;
+  padding-right: 10px;
+}
+
+.sign-in-form {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  right: 0;
+  margin: auto;
+  width: 400px;
+  height: 285px;
+}
+
+.centered-progress {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  right: 0;
+  margin: auto;
+  width: 400px;
+  height: 20px;
+}
+
+.centered-sign-in {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  right: 0;
+  margin: auto;
+  width: 400px;
+  height: 200px;
+}
+
+a {
+  color: #6200ee;
+}
+
+* {
+  font-family: Poppins;
+}

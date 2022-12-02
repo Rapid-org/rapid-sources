@@ -1,0 +1,343 @@
+.App {
+	text-align: center;
+}
+
+body {
+	overflow: hidden;
+}
+
+.blocklyTreeRow {
+	height: 22px;
+	line-height: 22px;
+	cursor: pointer;
+	white-space: nowrap;
+	padding: 10px;
+	border-radius: 11px;
+	margin: 10px;
+	border: 1px solid #a5a2a266;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins'),
+		url(./fonts/Poppins-Regular.ttf)
+			format('opentype');
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite
+			20s linear;
+	}
+}
+
+* {
+	font-family: Poppins, sans-serif !important;
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+#project-toolbar {
+	float: left;
+	margin-top: 25px;
+	margin-left: 59px;
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+#project-building-popup {
+	width: 220px;
+	height: 75px;
+	right: 1vh;
+	top: 87vh;
+	visibility: hidden;
+	display: flex;
+	background: white;
+	z-index: 10000;
+	box-shadow: 0 0 7px #e0e0e0;
+	position: absolute;
+}
+
+#building-popup-label {
+	font-size: 16px;
+	vertical-align: middle;
+	margin-top: 4vh;
+	margin-left: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 147px;
+}
+
+.centered-progress {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	right: 0;
+	margin: auto;
+	width: 400px;
+	height: 66px;
+}
+
+.toolbar-button {
+	min-width: 150px !important;
+	margin-top: 8px !important;
+	margin-left: 13px !important;
+	text-transform: none !important;
+}
+
+#projects-view {
+	width: 100%;
+	height: 70vh;
+}
+
+#loading-project {
+	text-align: center;
+	height: 100%;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: #dadada;
+}
+
+.file-drop {
+	/* relatively position the container bc the contents are absolute */
+	position: relative;
+	height: 100px;
+	width: 100%;
+}
+
+.DarkTheme .MuiBox-root {
+	background-color: #1f1f1f;
+}
+
+.DarkTheme svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+	fill: white;
+}
+
+.DarkTheme .blocklyMainBackground {
+	fill: #1f1f1f !important;
+}
+
+.DarkTheme .blocklyToolboxDiv {
+	background-color: #1f1f1f !important;
+	border-style: solid;
+	border-color: dimgrey;
+	color: white;
+	border-width: 1px;
+}
+
+.blocklyTreeSeparator {
+	margin: 10px 9px !important;
+	border: solid #e5e5e575 0;
+}
+
+.blocklyTreeRow:not(.blocklyTreeSelected):hover {
+	background-color: #f7f5f5 !important;
+}
+
+.DarkTheme .file-drop-target {
+	color: white !important;
+}
+
+.DarkTheme
+	ul.MuiList-root.MuiList-padding.css-1mwowrh-MuiList-root {
+	background-color: #373737;
+	color: white;
+}
+
+.DarkTheme
+	.css-yfk5yq-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+	color: white;
+}
+
+.blocklyToolboxDiv {
+	background-color: white !important;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #e6e6e6;
+	overflow-x: visible;
+	overflow-y: scroll;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.pricing-plan {
+	border-color: lightgray !important;
+	border-radius: 17px !important;
+	padding: 10px;
+	margin: 0px 10px;
+	height: 512px;
+}
+
+.swiper-slide {
+	text-align: center;
+	width: 290px !important;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	width: 100%;
+
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.MuiTabs-flexContainerVertical {
+	height: 100%;
+}
+.css-iapyem-MuiButtonBase-root-MuiMenuItem-root {
+	padding: 10px 20px !important;
+}
+
+.MuiDialogContent-root.MuiDialogContent-dividers.css-1b8212j-MuiDialogContent-root
+	.MuiBox-root {
+	background-color: #373737;
+}
+
+.DarkTheme .css-18yds6y-MuiAvatar-root {
+	background-color: white;
+}
+
+.DarkTheme .logo {
+	filter: brightness(0) invert(1);
+}
+
+.DarkTheme
+	svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeSmall.css-ptiqhd-MuiSvgIcon-root {
+	fill: white !important;
+}
+
+.DarkTheme
+	.css-1wbnioe-MuiButtonBase-root-MuiButton-root:hover {
+	border-color: #939393;
+}
+
+.DarkTheme
+	.css-cw9263-MuiCircularProgress-root {
+	color: white;
+}
+
+.DarkTheme
+	.css-d16qp4-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-d16qp4-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+	color: white;
+}
+
+.DarkTheme
+	.css-1lklaht-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+	color: white !important;
+}
+
+.DarkTheme
+	.css-1lklaht-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
+	+ .MuiSwitch-track {
+	background-color: white !important;
+}
+
+.file-drop > .file-drop-target {
+	/* basic styles */
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	border: 2px dashed #cecece;
+	border-radius: 6px;
+	width: 600px;
+	color: black;
+	padding: 20px;
+
+	/* horizontally and vertically center all content */
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+
+	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+
+	align-items: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+
+	justify-content: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+
+	align-content: center;
+	-webkit-align-content: center;
+	-ms-flex-line-pack: center;
+
+	text-align: center;
+}
+
+.file-drop
+	> .file-drop-target.file-drop-dragging-over-target {
+	/* turn stuff orange when we are dragging over the target */
+	border-color: #6200ee !important;
+	color: #6200ee;
+}
+
+#blah2 {
+	margin-bottom: 20px;
+
+	* {
+		font-family: inherit;
+	}
+}
