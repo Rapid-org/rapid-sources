@@ -20,7 +20,7 @@ Please create a firebase project for your rapid fork. And download the google se
 https://firebase.google.com/docs/admin/setup#initialize-sdk
 And move it to the api directory.
 ### 3- SMTP
-To receive emails, you must have an SMTP server. Then modify the configuration for the nodemailer (https://github.com/Rapid-org/rapid-sources/blob/ce9328a7d246cbe386540a36dce7f7a61613ee71/api/controllers/mailControllers.js#L186)[here]
+To receive emails, you must have an SMTP server. Then modify the configuration for the nodemailer [here](https://github.com/Rapid-org/rapid-sources/blob/ce9328a7d246cbe386540a36dce7f7a61613ee71/api/controllers/mailControllers.js#L186)
 Additionaly, you have to create a credentials.json file in the api directory with the following structure:
 ```json
 {
